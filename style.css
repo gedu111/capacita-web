@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f5;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+    background: linear-gradient(90deg, #ffffff 0%, #f1effa 100%);
+    border-bottom: 2px solid #d9d9e6;
+}
+
+.logo img {
+    height: 72px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2f3f8f;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e8ecff;
+    color: #22347f;
+}
+
+/* Item ativo do menu */
+nav a.ativo {
+    background-color: #2f3f8f;
+    color: #ffffff;
+}
+
+/* Área principal */
+.pagina {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 70px;
+}
+
+/* Título */
+.topo h2 {
+    font-size: 4rem;
+    color: #32479b;
+    font-weight: 700;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.topo h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    margin-top: 18px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7a5bc7, #32479b);
+}
+
+/* Conteúdo principal */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto p {
+    font-size: 1.15rem;
+    color: #333333;
+    max-width: 560px;
+    margin-bottom: 26px;
+}
+
+.imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    opacity: 0.82;
+    filter: drop-shadow(0 12px 22px rgba(50, 71, 155, 0.14));
+}
+
+/* Caixa de informações */
+.informacoes {
+    background-color: #fafafa;
+    border-left: 6px solid #32479b;
+    border-radius: 18px;
+    padding: 34px 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    max-width: 980px;
+}
+
+.informacoes h3 {
+    font-size: 2rem;
+    color: #32479b;
+    margin-bottom: 22px;
+}
+
+.informacoes ul {
+    padding-left: 24px;
+}
+
+.informacoes li {
+    font-size: 1.08rem;
+    color: #2f2f2f;
+    margin-bottom: 12px;
+}
+
+/* Botão */
+.acao {
+    margin-top: 28px;
+}
+
+button {
+    background: linear-gradient(90deg, #32479b, #6d54bf);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(50, 71, 155, 0.22);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(50, 71, 155, 0.28);
+    opacity: 0.97;
+}
