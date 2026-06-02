@@ -1,0 +1,11 @@
+/* seletor por elemento */
+/* todos os <p> receberão esse estilo */
+
+p {
+    color: black;
+    font-size: 10px;
+}
+
+h3{
+    color:red;
+}
